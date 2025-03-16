@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0fce9;
+}
+
+header {
+    margin: 35px 0 0 42px;
+}
+
+
+.link-header {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #17233D;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.link-header:hover {
+    text-decoration: underline;
+}
+
+.link-header:active {
+    opacity: .6;
+}
+
+button {
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    border: 1px solid #4CB538;
+    background: #6FBF44;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .6;
+}
+
+div {
+    display: inline-block;
+}
+
+img {
+    width: 534px;
+    height: 467px;
+    margin: 120px 100px 30px 121px;
+    display: inline-block;
+}
+
+main {
+    display: inline-block;
+    position: absolute;
+    margin: 200px 57px 30px 0px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    color: #161A49;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+    color: #4B505A;
+}
+
+.link-main {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6FBF44;
+    cursor: pointer;
+}
+
+.link-main:hover {
+    text-decoration: underline;
+}
+
+.link-main:active {
+    opacity: .6;
+}
+
+@media screen and (max-width:810px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    div {
+        position: relative; 
+        flex-grow: 1; 
+        order: 2; 
+        top: 530px;
+        bottom: 26px;
+        max-height: 50vh;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .link-header {
+        display: none;
+    }
+
+    .button-header {
+        float: right;
+        margin-bottom: 76px;
+        margin-right: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+        width: auto;
+        margin: 124px 55px 0 55px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 28px;
+        line-height: 33px;
+        width: auto;
+        margin-top: 29px;
+        text-align: center;
+    }
+
+    .link-main {
+        margin: 26px 43px;
+        text-align: center;
+        display: block;
+    }
+    
+    main {
+        margin: 110px 0 0 0 ;
+        flex-grow: 1;
+        order: 1;
+    }
+}
